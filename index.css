@@ -16,6 +16,51 @@ nav {
 	height: 100vh;
 }
 
+
+
+
+
+
+header {
+	height:100vh;
+	margin-top:-56px;
+}
+
+.fullscreen-bg {
+    position: absolute;
+    height:100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('rain-cover.png') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
 .header {
 	height:100vh;
 	position:absolute;
@@ -28,16 +73,6 @@ nav {
 	justify-content: flex-end;
 	color:white;
 	padding-left:18px;
-}
-
-#myVideo {
-  height: 100vh;
-  overflow:hidden;
-  margin-top:-56px;
-}
-
-.tidbit-icon {
-	width:100%;
 }
 
 .header-title {
@@ -90,6 +125,10 @@ nav {
 	background-color:#f9f9f9;
 	margin-bottom:18px;
 	padding:18px;
+}
+
+.tidbit-icon {
+	width:100%;
 }
 
 .tidbit-heading {
