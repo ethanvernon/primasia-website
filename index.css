@@ -47,16 +47,16 @@ nav {
 	margin-bottom:64px;
 }
 
-.section {
+.section-container {
 	width:90%;
 	max-width:1280px;
-	margin-top:32px;
+	padding-top:32px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 .section-heading {
-	font-size:22px;
+	font-size:20px;
 }
 
 .section-card {
@@ -82,4 +82,86 @@ nav {
 
 .card-list {
 	margin-bottom:0;
+}
+
+.tidbit {
+	background-color:#f9f9f9;
+	margin-bottom:18px;
+	padding:18px;
+}
+
+.tidbit-heading {
+	color:#346094;
+	font-size:18px;
+	font-weight:600;
+}
+
+.tidbit-text {
+	font-size:14px;
+}
+
+.section--color-blue {
+	background-color:#13b5ea;
+	color:white;
+}
+
+.section--color-darkgray {
+	background-color:#262626;
+	color:white;
+}
+
+.section-carousel {
+	padding-top:18px;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.carousel-listItem {
+	line-height:36px;
+}
+
+.carousel-list {
+	background-color: #213748;
+	height:225px;
+	padding-top:48px;
+}
+
+.slick-dots {
+	bottom: 36px !important;
+	z-index:5 !important;
+	background-color: transparent !important; 
+}
+
+.slick-next {
+	right:-10px;
+}
+
+.slick-prev {
+	left:-10px;
+	z-index:50;
+}
+
+.section-media {
+	height:100px;
+	width:100px;
+	margin-bottom:24px;
+}
+
+.content-heading {
+	font-size:20px;
+}
+
+.content-text {
+	font-size:16px;
+}
+
+.content-button {
+	color:#262626;
+	font-weight:600;
+	font-size:20px;
+}
+
+.content-container {
+	padding-bottom:24px;
 }

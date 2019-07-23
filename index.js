@@ -5,7 +5,9 @@ $(document).ready(function(){
 	$(document).ready(function(){
 		$('.section-carousel').slick({
 			"slidesToShow": 1, 
-			"slidesToScroll": 1
+			"slidesToScroll": 1,
+			dots: true,
+			arrows: true
 		});
 	});
 
