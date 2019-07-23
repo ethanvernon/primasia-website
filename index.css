@@ -17,21 +17,23 @@ nav {
 }
 
 .header {
-	background-image: url(./hong-kong-skyline.jpg);
 	height:100vh;
+	position:absolute;
+	top:0;
+	left:0;
 	overflow:hidden; 
-	margin-top:-56px;
 	width:100%;
-	background-position: center !important;
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-attachment:fixed;
 	display:flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: flex-end;
 	color:white;
 	padding-left:18px;
+}
+
+#myVideo {
+  height: 100vh;
+  overflow:hidden;
+  margin-top:-56px;
 }
 
 .tidbit-icon {
@@ -44,7 +46,7 @@ nav {
 
 .header-subtitle {
 	font-size:18px;
-	margin-bottom:64px;
+	margin-bottom:32px;
 }
 
 .section-container {
@@ -165,3 +167,4 @@ nav {
 .content-container {
 	padding-bottom:24px;
 }
+
