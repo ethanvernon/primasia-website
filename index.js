@@ -4,7 +4,8 @@ $(document).ready(function(){
 	
 	$(document).ready(function(){
 		$('.section-carousel').slick({
-			value: key
+			"slidesToShow": 1, 
+			"slidesToScroll": 1
 		});
 	});
 
