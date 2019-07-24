@@ -11,29 +11,30 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function() {
-		//
-	    //After scrolling 100px from the top...
-	    if ( $(window).scrollTop() >=  $(window).height() && $('.hamburger').hasClass('hamburger-not-active') ) {
-	        $('.navbar.sticky-top').removeClass('navbar--style-transparent');
-	        $('.navbar.sticky-top').addClass('bg-dark');
-	    //Otherwise remove inline styles and thereby revert to original stying
-	    } else if ( $('.hamburger').hasClass('hamburger-not-active') ) {
-	        $('.navbar.sticky-top').removeClass('bg-dark');
-	        $('.navbar.sticky-top').addClass('navbar--style-transparent');
-	    }
+		//After scrolling from the top...
+		if ( $(window).scrollTop() >=  $(window).height() && $('.hamburger').hasClass('hamburger-not-active') ) {
+			$('.navbar.sticky-top').removeClass('navbar--style-transparent');
+			$('.navbar.sticky-top').addClass('bg-dark');
+		//Otherwise remove inline styles and thereby revert to original stying
+		} else if ( $('.hamburger').hasClass('hamburger-not-active') ) {
+			$('.navbar.sticky-top').removeClass('bg-dark');
+			$('.navbar.sticky-top').addClass('navbar--style-transparent');
+		}
 	});
 
 	//hamburger from codepen
 	var hamburger = $('.hamburger');
 
 	hamburger.on('click', function() {
-	  $(this).toggleClass('hamburger-active');
-	  $(this).toggleClass('hamburger-not-active');
-	  $('.navbar.sticky-top').addClass('bg-dark');
-	  if ( $(this.hasClass('hamburger-active')) ) {
-	  	$('.navbar.sticky-top').removeClass('bg-dark');
-	  	$(window).scroll();
-	  }
+		console.log('hamburger clicked');
+		$(this).toggleClass('hamburger-active');
+		$(this).toggleClass('hamburger-not-active');
+		$('.navbar.sticky-top').addClass('bg-dark');
+		if ( $(this).hasClass('hamburger-not-active') ) {
+			$('.navbar.sticky-top').removeClass('bg-dark');
+			console.log('triggering scroll event');
+			$(window).scroll();
+		}
 	});
 
 });
