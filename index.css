@@ -199,7 +199,7 @@ header {
 
 .section-carousel {
 	padding-top:18px;
-	width:300px;
+	max-width:300px;
 	margin-left:auto;
 	margin-right:auto;
 }
