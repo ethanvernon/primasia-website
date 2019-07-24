@@ -16,6 +16,10 @@ button:focus {
 	outline:none;
 }
 
+.bg-dark {
+	background-color: rgba(7,28,49,.9) !important;
+}
+
 .navbar--style-transparent {
 	background-color:transparent;
 }
@@ -25,11 +29,27 @@ button:focus {
 }
 
 .navbar-nav{
+	padding-top:30px;
 	height: 100vh;
 }
 
 .navbar-dark .navbar-toggler {
 	border-color:transparent;
+}
+
+.nav-link {
+	padding: .1rem 1rem;
+	font-size:18px;
+}
+
+.nav-link--size-small {
+	font-size:14px;
+	color:white !important;
+	padding-top:0px;
+}
+
+.nav-item--margin-top {
+	margin-top:20px;
 }
 
 header {
@@ -264,6 +284,7 @@ header {
 
 .content-container {
 	padding-bottom:24px;
+	width:200px;
 }
 
 .content-container:hover .arrow {
@@ -271,7 +292,7 @@ header {
 }
 
 .arrow--position-near {
-	left:35%;
+	left:140px;
 	bottom:29px;
 }
 
