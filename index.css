@@ -327,10 +327,19 @@ header {
     width: 90%;
 }
 
+footer {
+	min-width:100%;
+}
+
 .footer {
 	background-color:black;
 	color:white;
 	padding: 64px 64px 32px 32px;
+}
+
+.footer-submenu {
+	width:100%;
+	min-width:150px;
 }
 
 .footer-subheading {
