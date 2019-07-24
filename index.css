@@ -140,6 +140,10 @@ header {
 	letter-spacing:.5px;
 }
 
+.button-container {
+	padding: 18px;
+}
+
 .card-button {
 	margin: 18px auto 18px auto;
 	color:white;
@@ -153,14 +157,14 @@ header {
 	text-decoration:none;
 }
 
-.card-button:hover .arrow {
-	left:75%;
+.button-container:hover .arrow {
+	left:60%;
 }
 
 .arrow {
 	margin-left:5px;
 	position:absolute;
-	left:70%;
+	left:50%;
 	bottom:24px;
 	transition: all .5s;
 }
