@@ -10,9 +10,12 @@
 }
 
 .hamburger {
-  position: absolute;
+  /*position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%;*/
+  position: fixed;
+  top: 33px;
+  right: 18px;
   transform: translate(-50%, -50%);
   width: 26px;
   cursor: pointer;

@@ -12,6 +12,10 @@ nav {
 	position:fixed;
 }
 
+button:focus {
+	outline:none;
+}
+
 .navbar--style-transparent {
 	background-color:transparent;
 }
