@@ -181,7 +181,7 @@ header {
 }
 
 .tidbit-icon {
-	width:100%;
+	max-width:100px;
 }
 
 .tidbit-heading {
