@@ -12,8 +12,20 @@ nav {
 	position:fixed;
 }
 
+.navbar--style-transparent {
+	background-color:transparent;
+}
+
+.navbar.sticky-top {	
+	transition: background-color .25s ease-in;
+}
+
 .navbar-nav{
 	height: 100vh;
+}
+
+.navbar-dark .navbar-toggler {
+	border-color:transparent;
 }
 
 header {
@@ -56,6 +68,10 @@ header {
     }
 }
 
+.logo--color-transparent {
+	height:40px;
+}
+
 .header {
 	height:100vh;
 	position:absolute;
@@ -75,7 +91,7 @@ header {
 }
 
 .header-subtitle {
-	font-size:18px;
+	font-size:14px;
 	margin-bottom:32px;
 }
 
@@ -101,6 +117,10 @@ header {
 
 .section-card--color-lightblue {
 	background-color:#3386cb;
+}
+
+.card-body {
+	padding:10px;
 }
 
 .card-text {
